@@ -1,0 +1,64 @@
+<section class="country-cards" id="country-cards">   
+    <div class="box-conatiner">
+       <div class="box">
+      <img src="pk.jpg" alt="Pakistan">
+      <div class="overlay">
+        <div class="text">Pakistan</div>
+       </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="usa.jpg" alt="USA">
+      <div class="overlay">
+        <div class="text">USA</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="england.jpg" alt="England">
+      <div class="overlay">
+        <div class="text">England</div>
+      </div>
+    </div>
+ </section>
+
+
+ /* cards */
+
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+
+
+.hidden-cards {
+  display: none;
+}
+
+.hidden-cards .card {
+  background-color: rgb(131, 70, 35);
+}
+
+/* gallery */
+
+.gallery{
+  background: var(--bg);
+}
+
+.gallery .slide .image{
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .slide .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: var(--white);
+}
+
+/* end */

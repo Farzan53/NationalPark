@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive zoo website</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main: #ff6e01;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0,);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 8rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.btn{
+  font-size: 1.7rem;
+  display: inline-block;
+  background: var(--main);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background-color: white
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i{
+  color: var(--main);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: var(--black);
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+  color: var(--main);
+}
+
+.header .icons div{
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .icons div:hover{
+  color: var(--main);
+}
+
+.hc{
+  display: block;
+  margin-left: 500px !important;
+}
+.card img{
+  height: 200px;
+}
+.col{
+  margin-top: 90px;
+}
+.image{
+width: 80%;
+height: 3px !important;
+display: block;
+  position: center;
+
+}
+      
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+body {
+            background-color: #ff9748; /* Change the background color */
+        }
+        #map-container {
+      width: 50%;
+      max-width: 300px; /* Set your desired map width */
+      margin: 0 auto;
+      display: flex;
+      position: center;
+      justify-content: block; /* Left alignment */
+      padding: 20px;
+    }
+    #map-container {
+      width: 100%;
+      height: 100vh;
+      display: initial;
+      justify-content: left; /* Horizontal center */
+      align-items: center;    /* Vertical center */
+    }
+
+    #map {
+      height: 200px; /* Map height */
+      width: 300px;  /* Map width */
+      margin: auto;
+    }
+    .image-container {
+        display: flex;
+            gap: 10px; /* Images ke beech ka gap */
+            justify-content: center; /* Images ko center align karein */
+        }
+        .image-container img {
+            width: 150px; /* Small size width */
+            height: auto; /* Aspect ratio maintain karein */
+            border: 1px solid #fcba88; /* Optional border */
+            border-radius: 5px; /* Rounded corners (optional) */
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #fcba88;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-btn i {
+            margin-right: 8px;
+        }
+
+        .download-btn:hover {
+            background-color: #ff9748;
+        }
+        a{
+    text-decoration: none;
+}
+.location-btn {
+    background-color: orange;
+    color: black;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.location-btn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+
+.location-btn:active {
+    background-color: #ff6600;
+    transform: scale(1);
+}
+
+/************** End Location Button *****************/
+
+
+/****************** iframe *********************/
+#f1{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+/****************** iframe *********************/
+</style>
+<body>
+     <!-- header -->
+
+     <header>
+
+      <header class="header">
+ 
+         <a href="komododragon.html" class="logo"> <i class="fas fa-paw"></i>National Park Zoo</a>
+         <nav class="navbar">
+             <a href=""><h1>Sandiego Zoo Park</h1></a>
+         </ul>
+         </nav>
+ 
+         <div class="icons">
+         </div>
+     </header>
+
+     <!-- end -->
+<br><br>
+ <!-- about -->
+
+ <section class="about" id="about">
+
+  <h2 class="deco-title"></h2>
+
+<div class="box-container">
+  <div class="image">
+    <img src="usa eproject/San diego zoo3/epro1.jpg" alt="Image" style=" float:left; margin-right:10px; position: relative; top: -1px; height:75vh">
+    <br><br>
+    <h2 class="heading" style="box-shadow: rgba(0, 0, 0);">About Sandiego Zoo Park</h2>
+    <h1>What is Sandiego Park Zoo ? and where is located established?</h1><br><h3>The San Diego Zoo is one of the most famous and largest zoos in the world, known for its extensive collection of animals and commitment to wildlife conservation.
+        The zoo is situated in Balboa Park, in the city of San Diego, California, USA.The San Diego Zoo was officially founded in 1916, following the Panama-California Exposition held in 1915–1916.
+    </h3>
+         <br><br>
+           <br>
+            <h2 class="heading">Opening & Closed Timings</h2>
+           <div class="row">
+            <div class="col-6">
+           <h3>The zoo is typically open every day from 9:00 AM to 6:00 PM.</h3>
+          </div>
+          <div class="col-6">
+             <h3>During peak seasons (like summer and holidays), the zoo may extend its hours 
+                It’s always a good idea to check the official website for the most current timings.</h3>
+           </div>
+           <div class="col-6">
+            <h3> Animal shows and encounters are scheduled throughout the day, with times varying based on season and animal activity. The zoo’s schedule for animal experiences is available at the entrance or online Family-Friendly Features.</h3>
+           </div>
+           <br><br>
+           <div class="col-6">
+            <h3>The zoo offers family-oriented programs and camps for kids, including day camps, overnight camps, and educational programs. These programs allow children to engage in fun and educational
+                 experiences related to animals, conservation, and the natural world.</h3>
+           </div>
+          </div>
+           <br><br>
+           <div class="image-container">
+            <img src="usa eproject/San diego zoo3/epro2.jpg" alt="" style="width: 640px; height: auto;">
+            <img src="usa eproject/San diego zoo3/epro3.jpg" alt="" style="width: 600px; height: auto;">
+       
+           </div>
+            <br><br>
+            <br>
+            <h2 class="heading"> Animals List</h2>
+            <h3>The San Diego Zoo is home to over 12,000 animals, representing more than 650 species and subspecies. The zoo is renowned for its diversity of wildlife, featuring animals from around the world, including iconic species such as:</h3>
+            <br><br> 
+
+
+           <center><div class="row">
+              <div class="col-4"> 
+            <h3>Komodo Dragons</h3> 
+          </div>
+            <div class="col-4">
+            <h3>Koalas</h3> 
+            </div>
+            <div class="col-4">
+            <h3>Arabian oryx</h3>
+          </div>
+          </div>
+        </center>
+
+          <center><div class="row">
+            <div class="col-4">
+          <h3>Flamingos</h3>
+        </div>
+        <div class="col-4">
+          <h3>Polar bear</h3>
+          </div> 
+          <div class="col-4">
+          <h3>Tigers</h3>
+          </div>
+        </div>
+          </center>
+
+        <center><div class="row">
+          <div class="col-4">
+        <h3>Gorilas</h3>
+        </div>
+        <div class="col-4">
+        <h3>Lions</h3>
+        </div>
+        <div class="col-4">
+        <h3>Monkeys</h3>
+      </div>
+      </div>
+    </center>
+
+    <br><br>
+    <br><br>
+    <h2 class="heading">Download The Park Data</h2>
+
+    <center><a href="documentation/About Sandiego Zoo Park.docx" download="docx" class="download-btn">
+      <i class="fas fa-download"></i> Download The Park Details
+  </a></center>
+
+
+
+           
+          
+            <br>
+            <h2 class="heading">Address & Contact</h2>
+           <h3> Address:The San Diego Zoo is located at 2920 Zoo Drive, Sandiego, California 92101.
+            For questions related to visiting, opening times, directions, accessibility, or other general information, you can visit their [Support Centre](https://www.Sandiegozoo.org/about-us/contact-london-zoo).
+                    <br><br>
+                    Email:  For specific enquiries <br> Media personnel can contact the Public Relations department at SDZWAPublicRelations@SDZWA.org.
+                    <br><br>
+                    Phone:For urgent enquiries, you can call their Supporter Contact team at (619) 718-3000.
+                    <br><br>
+                    For the most accurate and up-to-date information, it's recommended to visit the [official Sandiego Zoo website]( https://zoo.sandiegozoo.org).</p></h3>
+                  <br><br>
+                  <h2 class="heading">Location</h2>               
+                  <div id="f1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.54828020762!2d-2.886064123074166!3d53.22594728372495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487add9d7c4b2fe7%3A0x1458b55b7024e327!2sChester%20Zoo!5e0!3m2!1sen!2s!4v1738322766992!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                  <br><br><br><br>
+                  <a href="" id="a"><button type="button" class="location-btn">Location</button></a>
+                  <br><br><br><br><br>
+                                    <script>
+                                      if(navigator.geolocation){
+                      navigator.geolocation.watchPosition(function(pos){
+                          console.log(pos.coords.latitude + " " + pos.coords.longitude)
+                          document.getElementById('a').innerHTML='<a href="https://maps.app.goo.gl/Nf2U9CuJzKMKD9867"><button type="button" class="location-btn">Location</button></a>'
+                      
+                      })
+                  }
+        </script>
+      </body>
